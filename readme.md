@@ -14,4 +14,4 @@ step 5.
 
 To calculate the angle in step 6, solve the following equation by approximation
 (like bisection method):
-![Formula(/formula.png)
+![Formula](/formula.png)
