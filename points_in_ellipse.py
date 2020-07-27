@@ -9,9 +9,8 @@ class Points_in_ellipse:
     param n: number of points around the ellipse.
     """ 
     def __init__(self, a, b, n):
-        self.a = a
-        self.b = b
-        self.n = n
+        self.set_size(a, b)
+        self.set_point_count(n)
 
     """
     set_size(a, b)
@@ -23,3 +22,7 @@ class Points_in_ellipse:
         self.a = a
         self.b = b
         self.p = pi*(3*(a+b)-sqrt((3*a+b)*(a+3*b)))
+
+    def set_point_count(self, n):
+        self.n = n
+        self.l = self.p/self.n
