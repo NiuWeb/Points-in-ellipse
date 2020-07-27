@@ -10,7 +10,7 @@ class Points_in_ellipse:
     """ 
     def __init__(self, a, b, n):
         self.set_size(a, b)
-        self.set_point_count(n)
+        self.set_count(n)
 
     """
     set_size(a, b)
@@ -22,7 +22,7 @@ class Points_in_ellipse:
         self.a = a
         self.b = b
         self.p = pi*(3*(a+b)-sqrt((3*a+b)*(a+3*b)))
-
-    def set_point_count(self, n):
+    
+    def set_count(self, n):
         self.n = n
         self.l = self.p/self.n
